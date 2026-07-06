@@ -5,6 +5,17 @@ public class StarTriangle5 {
      */
    public static void starTriangle5() {
       // TODO: Fill in this function
+      int i=0;
+      int a=0;
+      for(i=0; i<5; i++){
+         for(a=0; a<4-i; a++){
+            IO.print(" ");
+         }
+         for(a=0; a<i; a++){
+            IO.print("*");
+         }
+         IO.println("*");
+      }
    }
    
    public static void main(String[] args) {
