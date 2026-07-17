@@ -40,8 +40,14 @@ public class IntList {
      * You are not allowed to use "new" in this method.
      */
     public static IntList incrRecursiveDestructive(IntList L, int x) {
-        // TODO: Fill in this code
-        return null;
+        if(L == null){
+            return null;
+        }
+        L.first = L.first + x;
+        if(L.rest != null){
+            L.rest = IntList.incrRecursiveDestructive(L.rest,x);
+        }
+        return L;
     }
 
     /*
